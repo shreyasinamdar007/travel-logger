@@ -4,7 +4,11 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   // register eslint module with options
-  modules: [["@nuxt/eslint", { config: { standalone: false } }], "@nuxt/icon"],
+  modules: [
+    ["@nuxt/eslint", { config: { standalone: false } }],
+    "@nuxt/icon",
+    "@nuxtjs/color-mode",
+  ],
   css: ["./app/assets/css/main.css"],
   vite: {
     plugins: [
@@ -13,5 +17,8 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: ["@nuxt/devtools", "@vue/devtools-core", "@vue/devtools-kit"],
     },
+  },
+  colorMode: {
+    dataValue: "theme",
   },
 });
