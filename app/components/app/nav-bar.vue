@@ -6,7 +6,8 @@
       </NuxtLink>
     </div>
     <div class="navbar-end">
-      <NuxtLink to="/signin" class="btn btn-primary text-black text-md bg-accent hover:bg-teal-500 hover:text-white">
+      <AppThemeToggle />
+      <NuxtLink to="/signin" class="btn btn-secondary text-md">
         Sign In with GitHub
         <Icon name="tabler:brand-github" size="24" />
       </NuxtLink>
