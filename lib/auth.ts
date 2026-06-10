@@ -5,6 +5,7 @@ import db from "./db/index";
 import env from "./env";
 
 export const auth = betterAuth({
+  secret: env.BETTER_AUTH_TOKEN,
   database: drizzleAdapter(db, {
     provider: "sqlite",
   }),
