@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     ["@nuxt/eslint", { config: { standalone: false } }],
     "@nuxt/icon",
     "@nuxtjs/color-mode",
+    "@pinia/nuxt",
   ],
   css: ["./app/assets/css/main.css"],
   vite: {
