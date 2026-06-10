@@ -9,10 +9,7 @@
           Keep track of your travels and share your experiences with friends and family. Create a travel log to document
           your adventures and inspire others to explore the world.
         </p>
-        <button class="btn btn-secondary">
-          Sign In with GitHub
-          <Icon name="tabler:brand-github" size="24" />
-        </button>
+        <AuthButton />
       </div>
     </div>
   </div>
